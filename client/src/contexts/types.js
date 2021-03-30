@@ -1,0 +1,7 @@
+export const MCQ_CREATION_DETAILS = 'MCQ_CREATION_DETAILS';
+
+export const ADD_MCQ  = 'ADD_MCQ';
+export const ADD_FILL_UP = 'ADD_FILL_UP'; 
+
+export const EDIT_MCQ_RESPONSES  = 'EDIT_MCQ_RESPONSES';
+export const EDIT_FILL_UP_RESPONSES = 'EDIT_FILL_UP_RESPONSES'; 
