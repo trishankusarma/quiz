@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Create_mcq = () => {
     return (
         <div className='container'>
-            <h1>Create MCQ</h1>
+            <h1>CREATE MCQ</h1>
 
-            <button><Link to='/mcq_form'>Create MCQ</Link></button>
+            <button ><Link to='/mcq_form'>Create MCQ</Link></button>
         </div>
     )
 }

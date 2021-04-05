@@ -191,14 +191,14 @@ const Fill_mcq_questions = () => {
     }
 
     return (
-        <div  className='container'>
-            <h1>Fill_mcq_questions</h1>
+        <div  className='container MCQ3rd' style={{overflowY:'none'}}>
+            <h1>Fill MCQs</h1>
 
             {questions.map(q=>
               <form key={q.questionNo} id={q.questionNo} onSubmit={onSubmit}>
                   
                    <div>
-                      <span style={{padding:'10px'}}>{q.questionNo}</span>
+                   <span style={{fontSize:'160%'}}>{q.questionNo}.</span><br></br>
                    
                       <input type='text' name='question' value={q.question} placeholder='Enter question' onChange={handleChangeMcq} />
 
@@ -206,7 +206,7 @@ const Fill_mcq_questions = () => {
                      
                       <input type='Number' name='noOfOptions' value={q.noOfOptions} placeholder='Enter no of options' required onChange={handleChangeMcq} /> 
                     </div>
-                    <div>
+                    <div className='enteroptions'>
                        {q.options.map(op=>
                            <input key={op.optionNo} id={op.optionNo} name='options' value={op.option} placeholder='Enter options'  required onChange={handleChangeMcq}  />
                         )}
@@ -216,29 +216,29 @@ const Fill_mcq_questions = () => {
                          
                         <input type='Number' name='marks' value={q.marks} placeholder='Enter Marks' required onChange={handleChangeMcq} />    
                     </div>
-                    <button type="submit">{parseInt( q.questionNo ) === parseInt( questions.length ) ? 'Add Question' : 'Edit Question' }</button>          
+                    <button style={{width:'60%',marginBottom:'10%',margin:'auto',transform:'translateX(30%)',left:'20%'}}   type="submit">{parseInt( q.questionNo ) === parseInt( questions.length ) ? 'Add Question' : 'Edit Question' }</button>          
               </form>   
             )}
             
-            <h1>Fill_up_the_blanks</h1>
+            <h1>Fill up the blanks</h1>
 
             {fillUp.map(q=>
             
               <form key={q.questionNo} onSubmit={onSubmitFillUp} id={q.questionNo}>
               
-                  <span style={{padding:'10px'}}>{q.questionNo}</span>
+                  <span style={{fontSize:'160%'}}>{q.questionNo}.</span><br></br>
               
                   <input type='text' name='question' value={q.question} placeholder='Enter FILL up' required onChange={handleChangeFillUp} />    
                   
                   <input type='text' name='correct_answer' value={q.correct_answer} placeholder='Enter Correct Option' required onChange={handleChangeFillUp} />    
 
-                  <input type='Number' name='marks' value={q.marks} placeholder='Enter Marks' required onChange={handleChangeFillUp} />    
+                  <input type='Number' name='marks' value={q.marks} placeholder='Enter Marks' required onChange={handleChangeFillUp} />    <br></br>
                   
-                  <button type="submit">{parseInt( q.questionNo ) === parseInt( fillUp.length ) ? 'Add Question' : 'Edit Question' }</button>          
+                  <button   style={{width:'60%',marginBottom:'15%',margin:'auto',transform:'translateX(30%)',left:'20%'}} type="submit">{parseInt( q.questionNo ) === parseInt( fillUp.length ) ? 'Add Question' : 'Edit Question' }</button>          
               </form>   
             )}
             
-            <button><Link to='/give_quiz'>Click to Quiz section</Link></button>
+            <button style={{marginBottom:'5%'}}><Link to='/give_quiz'>Click to Quiz section</Link></button>
         </div>
     )
 }

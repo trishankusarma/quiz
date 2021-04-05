@@ -13,10 +13,10 @@
     justify-content: space-around;
     align-items: center;
     overflow-x: hidden;
-}
+}       
 .container .formData{
-    height: 60vh;
-    width: 80vw;
+    height: 70vh;
+    width: 90vw;
     background-color: #282c34; 
     color: #61dafb;
     display: flex;
@@ -24,19 +24,61 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .container .formData .options{
-    width: 80vw;
+    width: 50vw;
     color: #f4fbfd;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.container .formData .options input{
+/* .container .formData .options input{
     margin-left:20px;
-}
-.container button,.container input{
-    padding:10px;
-}
-/* background-color: #282c34; */
+} */
 
-/* color: #61dafb; */
+
+
+
+/* create mcq page */
+.container button{
+    width: 15%;
+    padding:13px;
+    border-radius: 7px;
+    background-color: #0093D4;
+    border: 2px solid white;
+    font-size: large;
+    outline: none;
+
+}
+.container button:hover{
+    transform: scale(1.01);
+    transition: 0.2s;
+} 
+
+/* background-color: #282c34; */
+.container a:visited,a:link  {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+    
+  }
+  .container h1{
+    font-size: 3vw;
+  }
+
+  .MCQ3rd h1{
+      margin-top: 4%;
+      margin-bottom: 7%;
+  }
+  .MCQ3rd input{
+     padding: 15px; 
+     width: 100%;
+     outline: none;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    
+  }
+  .MCQ3rd .enteroptions{
+      display: flex;
+      flex-direction: row;
+  }

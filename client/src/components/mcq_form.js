@@ -31,41 +31,41 @@ const Mcq_form = () => {
     }
 
     return (
-        <div  className='container'>
-            <h1>Mcq_form</h1>
+        <div  className='container MCQform2nd'>
+            <h1>MCQ FORM</h1>
 
             <form onSubmit={onSubmit} className='formData'>
                 
-               <h3>Whether it would be single choice or multiple choice</h3>
+               <h3 style={{fontSize:'2rem'}}>Whether it would be single choice or multiple choice ?</h3>
 
-               <div className="options">
+               <div style={{fontSize:'1.5rem'}} className="options">
                    
-                   <label >Multiple Option Answer
-                     <input type="radio" name="pattern" value='Multiple Option Answer' onChange={handleChange}  />
+                   <label > Multiple Option Answer
+                     <input style={{marginLeft:'20px',transform:'scale(2.2)'}} type="radio" name="pattern" value='Multiple Option Answer' onChange={handleChange}  />
                    </label>
           
                    <label >Single Option Answer
-                     <input type="radio" name="pattern" value='Single Option Answer' onChange={handleChange}   />
+                     <input style={{marginLeft:'20px',transform:'scale(2.2)'}} type="radio" name="pattern" value='Single Option Answer' onChange={handleChange}   />
                     </label>
          
                </div>
             
 
-               <h3>Would You allow students to navigate back</h3>
+               <h3 style={{fontSize:'2rem'}}>Would You allow students to navigate back ?</h3>
 
-               <div className="options">
+               <div className="options" style={{fontSize:'1.5rem'}}>
                    
-                   <label >Yes
-                     <input type="radio" name="nagigation" value="Yes" onChange={handleChange} />
+                   <label > Yes
+                     <input style={{marginLeft:'20px',transform:'scale(2.2)'}} type="radio" name="nagigation" value="Yes" onChange={handleChange} />
                    </label>
           
-                   <label >No
-                     <input type="radio" name="nagigation" value="No" onChange={handleChange}  />
+                   <label > No
+                     <input style={{marginLeft:'20px',transform:'scale(2.2)'}} type="radio" name="nagigation" value="No" onChange={handleChange}  />
                     </label>
          
                </div>
 
-               <button type='submit'><Link to='/fill_mcq_questions'>Fill MCQ Questions and Fill up</Link></button>
+               <button type='submit'><Link to='/fill_mcq_questions'>Fill MCQ Questions</Link></button>
             </form>
         </div>
     )
